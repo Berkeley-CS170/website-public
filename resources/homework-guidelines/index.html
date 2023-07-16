@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/assets/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/open-sans.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/main.css" crossorigin="anonymous">
+    <link href="/assets/open-iconic-bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/bootstrap-toc.min.css" rel="stylesheet">
+    <link href="/assets/fullcalendar.min.css" rel="stylesheet">
+    <link href="/assets/fullcalendar-daygrid.min.css" rel="stylesheet">
+    <link href="/assets/fullcalendar-timegrid.min.css" rel="stylesheet">
+    <link href="/assets/fullcalendar-bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/fullcalendar-list.min.css" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href=" /favicon.ico"/>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137968408-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-137968408-2');
+    </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="/assets/jquery.min.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script> -->
+    <script src="/assets/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="/assets/bootstrap-toc.min.js"></script>
+    <script src="/assets/moment.min.js"></script>
+    <script src="/assets/fullcalendar.min.js"></script>
+    <script src="/assets/fullcalendar-gcal.min.js"></script>
+    <script src="/assets/fullcalendar-daygrid.min.js"></script>
+    <script src="/assets/fullcalendar-timegrid.min.js"></script>
+    <script src="/assets/fullcalendar-bootstrap.min.js"></script>
+    <script src="/assets/fullcalendar-list.min.js"></script>
+
+    
+
+    <link rel="stylesheet" href="/assets/katex.min.css" integrity="sha384-BdGj8xC2eZkQaxoQ8nSLefg4AV4/AwB3Fj+8SUSo7pnKP6Eoy18liIKTPn9oBYNG" crossorigin="anonymous">
+
+    <script src="/assets/katex.min.js" integrity="sha384-JiKN5O8x9Hhs/UE5cT5AAJqieYlOZbGT3CHws/y97o3ty4R7/O5poG9F3JoiOYw1" crossorigin="anonymous"></script>
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <script src="/assets/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"></script>
+
+    <script>
+      $(function () {
+        $("script[type='math/tex']").replaceWith(function() {
+          var tex = $(this).text();
+          return katex.renderToString(tex, {displayMode: false});
+        });
+
+        $("script[type='math/tex; mode=display']").replaceWith(function() {
+          var tex = $(this).html();
+          return katex.renderToString(tex.replace(/%.*/g, ''), {displayMode: true});
+        });
+      });
+    </script>
+
+    
+
+    <title> CS 170 </title>
+  </head>
+  <body>
+
+    <div class="wrapper bg-white">
+        <nav class="navbar navbar-light navbar-expand-md align-items-center">
+            <div class="container">
+                <!-- <a class="navbar-brand brand-berkeley" href="/fool/'"> <img src="/assets/fool.gif" alt="fool" height="50px"> </a> -->
+                <a class="navbar-brand brand-berkeley" href="/"> CS 170 </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                  <ul class="navbar-nav">
+                      
+
+                      
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" id="schedule-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Schedule
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="schedule-dropdown">
+                            
+                            <a class="dropdown-item " 
+                              href="
+/schedule/discussions/
+">
+                              Discussions
+                              
+                            </a>
+                            
+                            <a class="dropdown-item " 
+                              href="
+/schedule/calendar/
+">
+                              Calendar
+                              
+                            </a>
+                            
+                          </div>
+                        </li>
+                      
+
+                      
+
+                      
+                      <li class="nav-item ">
+                          <a class="nav-link " 
+                            href="
+/staff/
+">
+                            Staff
+                            
+                          </a>
+                        </li>
+                      
+
+                      
+
+                      
+                      <li class="nav-item ">
+                          <a class="nav-link " 
+                            href="
+/resources/
+">
+                            Resources
+                            
+                          </a>
+                        </li>
+                      
+
+                      
+
+                      
+                      <li class="nav-item ">
+                          <a class="nav-link " 
+                            href="
+/syllabus/
+">
+                            Syllabus
+                            
+                          </a>
+                        </li>
+                      
+
+                      
+
+                      
+                      <li class="nav-item ">
+                          <a class="nav-link  text-muted " 
+                            href="
+https://edstem.org/us/courses/35698
+">
+                            Ed
+                            
+                              <span class="oi oi-external-link"></span> 
+                            
+                          </a>
+                        </li>
+                      
+
+                      
+
+                      
+                      <li class="nav-item ">
+                          <a class="nav-link  text-muted " 
+                            href="
+https://bcourses.berkeley.edu/courses/1523347
+">
+                            bCourses
+                            
+                              <span class="oi oi-external-link"></span> 
+                            
+                          </a>
+                        </li>
+                      
+
+                      
+
+                      
+                      <li class="nav-item ">
+                          <a class="nav-link  text-muted " 
+                            href="
+https://oh.cs170.org
+">
+                            Queue
+                            
+                              <span class="oi oi-external-link"></span> 
+                            
+                          </a>
+                        </li>
+                      
+
+                      
+                  </ul>
+                </div>
+            </div>
+          </nav>
+      
+          <div class="container">
+
+               <!--<div class="alert alert-warning">-->
+
+    <!--<span class="oi oi-warning"></span>-->
+
+    <!--<strong>Site Under Construction</strong>-->
+
+<!--    <strong>Outage Updates</strong>: There are assignments that have been extended due to class cancellations.-->
+
+    <!--<ul>-->
+        <!--<li><em>Homework 9</em>: Now due Thursday 10/31. Original deadline was Wednesday 10/30.</li>-->
+    <!--</ul>-->
+
+    <!--For more information or to ask questions, please see the <a href="https://piazza.com/class/jz0o7nf7bd4jp?cid=700">outage index thread</a>.-->
+<!--</div> -->
+
+
+              
+
+<h1 class="mb-4">Homework Guidelines</h1>
+
+
+
+
+
+    <div class="row">
+        <div class="col-sm-9">
+            <h2 id="formatting-homework">Formatting Homework</h2>
+
+<p>You can write your homework in one of the following ways:</p>
+
+<ol>
+  <li>Typeset your answers using LaTeX. We strongly recommend doing this.
+See the <a href="/resourceslatex-guide/">Latex Guide</a> for help using LaTeX.</li>
+  <li>Type your answers using a mainstream word processor.</li>
+  <li>Neatly handwrite, then use a flatbed scanner or smartphone app (such as CamScanner) to produce a PDF. <strong>Do not simply take a photo and dump it into a PDF.</strong></li>
+</ol>
+
+<p>The readers work hard to grade your homeworks in a timely manner, and with useful feedback. Given the size of the course, we require a certain format of all homeworks: <strong>each problem must start on a new page, and clearly display the problem number; if a problem has multiple parts, make sure that each part fits on a page.</strong>
+You must also select the pages for each problem when you submit to Gradescope, if you do not do this, <strong>you may not get points on that problem</strong>.</p>
+
+<p><strong>List your collaborators on the first page of your submission.</strong> If you have no collaborators, you must explicitly write “none”.</p>
+
+<h2 id="three-part-algorithm-format">Three-Part Algorithm Format</h2>
+
+<p>Oftentimes, a problem will ask you to “give/design/devise/formulate/create/etc. an algorithm” or to “show how” to solve some computational task. In this case, write your solution in the 3-part algorithm format:</p>
+
+<ol>
+  <li><strong>Algorithm description</strong>. This can come in terms of pseudocode, or a description in English. It must be unambiguous, as short as possible (but no shorter), and precise.
+    <ul>
+      <li>Your pseudocode does not need to be executable. You should use notation such as “add <em>X</em> to set <em>S</em>” or “for each edge in graph G”. Remember you are writing your pseudocode to be read by a human, not a computer.</li>
+      <li>See DPV for examples of pseudocode.</li>
+    </ul>
+  </li>
+  <li><strong>Proof of correctness</strong>. Give a formal proof (as in CS 70) of the correctness of your algorithm. Intuitive arguments are not enough.
+    <ul>
+      <li>Again, see DPV for examples of proofs of correctness.</li>
+    </ul>
+  </li>
+  <li><strong>Runtime analysis</strong>. You should use big-O notation for your algorithm’s runtime, and justify this runtime with a runtime analysis. This may involve a recurrence relation, or simply counting the complexity and number of operations your algorithm performs.</li>
+</ol>
+
+<h2 id="solo-problems">Solo Problems</h2>
+
+<p>Some problems on the homework may be labelled as <strong>solo problems</strong>. These problems are written to be easier than “standard” homework problems, but you are not allowed to collaborate with other students on these problems. You are still allowed to consult staff, e.g, at office hours for help on these problems, and staff can still answer questions about these problems to groups of people at office hours (though you should avoid discussing them at office hours while waiting for staff to get to you). The goal of these problems is to give yourself a benchmark for how well you would do if a similar problem appeared on an exam.</p>
+
+<h2 id="faq">FAQ</h2>
+
+<p><strong>When I have to write an algorithm, how should I format my answer?</strong></p>
+
+<p>We will do our best to specify what we expect you to write in each question, but when in doubt, default to a “3-part” solution, which is discussed <a href="/policies/#responding-to-algorithm-problems">here</a>.</p>
+
+<p><strong>How efficient does my algorithm need to be?</strong></p>
+
+<p>Do your best. We may or may not give a running time requirement up-front (sometimes that would give a strong hint on how to do the problem). Some baseline considerations: Most problems have a natural naive/brute-force algorithm (e.g. “try all possibilities”) or other trivial approaches (e.g. “apply [suboptimal known algorithm] without any modification or thought”). These usually receive no credit. Exponential-time algorithms usually get no credit. We often award partial credit to algorithms that are slower than our official solutions.</p>
+
+<p><strong>Can I cite theorems and algorithms from the textbook or lecture without proof?</strong></p>
+
+<p>Yes.</p>
+
+<p><strong>Can I use theorems and algorithms from other sources?</strong></p>
+
+<p>As detailed in the syllabus, you should not look up problem solutions using the internet/other sources. If you do run into a useful theorem/algorithm that aids in your solution, (a) you must prove it in your solution and (b) make sure to cite the source you got it from.</p>
+
+<p><strong>Is my interpretation of the problem correct? What about such-and-such case?</strong></p>
+
+<p>Piazza is not a good forum to figure out what a problem is asking / ask for hints or confirmation. Even something as innocuous as, “So on x input we would return y solution, correct?” can reveal a lot about a problem, which hurts other students’ understanding. Please first try asking fellow students and coming to office hours. If after doing this you still believe the problem is poorly worded and genuinely ambiguous, please go ahead and explain the ambiguity, but we will tend to avoid answering such questions when the problem is not unclear. Much of the challenge of the problem sets is precisely understanding the nuances of the problem, and asking to be given all the details defeats that purpose.</p>
+
+<p><strong>Do we give our algorithm’s worst-case running time, or average running time?</strong></p>
+
+<p>Most algorithms in this course are deterministic ones, for which we are always concerned with the worst case. For randomized algorithms, the expected running time is acceptable. Note that this may receive less credit if a superior deterministic algorithm is known.</p>
+
+<p><strong>Do I have to give Θ(⋅) running times for my algorithms, or only O(⋅)?</strong></p>
+
+<p>If it is possible to provide a \(\Theta(\cdot)\) bound in a simple manner, then you should do so. If it is not, then give the tightest \(\mathcal{O}\) bound possible.</p>
+
+<p><strong>What’s the deal with Θ(⋅) vs O(⋅) notation anyways?</strong></p>
+
+<p>We try to stick with the actual definitions, which means to use \(\Theta(\cdot)\) notation when you’re describing the exact asymptotic runtime. However, the textbook often uses \(\mathcal{O}(\cdot)\) notation even when giving tight bounds; if in the above example you wrote \(\mathcal{O}(n)\) for the runtime, we would still give you full credit because the runtime was correct, even though it’s better practice to use \(\Theta(\cdot)\) notation.</p>
+
+<p><strong>Can I make reasonable assumptions about the computational model?</strong></p>
+
+<p>Yes. If you think the assumption is not totally obvious, feel free to explain it as you perform the runtime analysis (eg “Because indexing into arrays takes constant time, …”)</p>
+
+<p><strong>Can I make [some additional assumption] about [some homework problem] that was not given in the problem?</strong></p>
+
+<p>No. For example, don’t assume numbers in a list are distinct, don’t assume a graph is connected, etc.</p>
+
+<p><strong>Do I need to provide a justification for my answer?</strong></p>
+
+<p>Yes, unless the problem explicitly states that justification is not required.</p>
+
+<p><strong>How rigorous does my explanation need to be?</strong></p>
+
+<p>Rigorous enough for any average CS170 student to understand it completely.</p>
+
+<p><strong>Can I use things shown in discussion/lecture/textbook without proof?</strong></p>
+
+<p>General response to this is: you are free to use things shown to you in lecture/textbook/discussion without proof, within bounds. The “within bounds” means that be reasonable with us — if we ask you to show that \(\sum_{k=1}^n k = \Theta(n^2)\), don’t say “This was shown in discussion so it is true.” Don’t take away the heart of a problem and claim it was done in X, that’s being too clever for your own good and won’t fare well. We expect students to be able to reason about what “within bounds” means. So feel free within bounds. And if in doubt about anything — <strong>ask.</strong></p>
+
+<p><strong>How will homework be graded?</strong></p>
+
+<p>Homework will be graded as a mix of coarsely and finely graded parts. (Some problems may be graded on a 100%, 50%, 0% scale, while others may be graded more carefully and finely.) An unannounced, not necessarily strict, subset of problems will be graded each week. Points will be assigned to problems <em>after</em> students have submitted the homework.</p>
+
+        </div>
+        <div class="col-sm-3">
+            <nav id="toc" class="sticky-top" style="top: 40px;"></nav>
+        </div>
+    </div>
+    
+    <script>
+        $(function() {
+            var navSelector = "#toc";
+            var $myNav = $(navSelector);
+            Toc.init($myNav);
+            $("body").scrollspy({
+                target: navSelector
+            });
+        });
+    </script>
+
+
+
+
+          </div>
+    </div>
+
+    <footer class="page-footer">
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link text-secondary" href="/">
+                  CS 170
+                </a>
+              </li>
+            
+            <li class="nav-item">
+              <a class="nav-link " 
+                href="
+/schedule/
+">
+                Schedule
+              </a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link " 
+                href="
+/staff/
+">
+                Staff
+              </a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link " 
+                href="
+/resources/
+">
+                Resources
+              </a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link " 
+                href="
+/syllabus/
+">
+                Syllabus
+              </a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link  text-dark " 
+                href="
+https://edstem.org/us/courses/35698
+">
+                Ed
+              </a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link  text-dark " 
+                href="
+https://bcourses.berkeley.edu/courses/1523347
+">
+                bCourses
+              </a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link  text-dark " 
+                href="
+https://oh.cs170.org
+">
+                Queue
+              </a>
+            </li>
+            
+
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="#">
+                Back to top
+              </a>
+            </li>
+        </ul>
+    </footer>
+  </body>
+</html>

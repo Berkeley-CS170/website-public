@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/assets/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/open-sans.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/main.css" crossorigin="anonymous">
+    <link href="/assets/open-iconic-bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/bootstrap-toc.min.css" rel="stylesheet">
+    <link href="/assets/fullcalendar.min.css" rel="stylesheet">
+    <link href="/assets/fullcalendar-daygrid.min.css" rel="stylesheet">
+    <link href="/assets/fullcalendar-timegrid.min.css" rel="stylesheet">
+    <link href="/assets/fullcalendar-bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/fullcalendar-list.min.css" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href=" /favicon.ico"/>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137968408-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-137968408-2');
+    </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="/assets/jquery.min.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script> -->
+    <script src="/assets/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="/assets/bootstrap-toc.min.js"></script>
+    <script src="/assets/moment.min.js"></script>
+    <script src="/assets/fullcalendar.min.js"></script>
+    <script src="/assets/fullcalendar-gcal.min.js"></script>
+    <script src="/assets/fullcalendar-daygrid.min.js"></script>
+    <script src="/assets/fullcalendar-timegrid.min.js"></script>
+    <script src="/assets/fullcalendar-bootstrap.min.js"></script>
+    <script src="/assets/fullcalendar-list.min.js"></script>
+
+    
+
+    <link rel="stylesheet" href="/assets/katex.min.css" integrity="sha384-BdGj8xC2eZkQaxoQ8nSLefg4AV4/AwB3Fj+8SUSo7pnKP6Eoy18liIKTPn9oBYNG" crossorigin="anonymous">
+
+    <script src="/assets/katex.min.js" integrity="sha384-JiKN5O8x9Hhs/UE5cT5AAJqieYlOZbGT3CHws/y97o3ty4R7/O5poG9F3JoiOYw1" crossorigin="anonymous"></script>
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <script src="/assets/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"></script>
+
+    <script>
+      $(function () {
+        $("script[type='math/tex']").replaceWith(function() {
+          var tex = $(this).text();
+          return katex.renderToString(tex, {displayMode: false});
+        });
+
+        $("script[type='math/tex; mode=display']").replaceWith(function() {
+          var tex = $(this).html();
+          return katex.renderToString(tex.replace(/%.*/g, ''), {displayMode: true});
+        });
+      });
+    </script>
+
+    
+
+    <title> CS 170 </title>
+  </head>
+  <body>
+
+    <div class="wrapper bg-white">
+        <nav class="navbar navbar-light navbar-expand-md align-items-center">
+            <div class="container">
+                <!-- <a class="navbar-brand brand-berkeley" href="/fool/'"> <img src="/assets/fool.gif" alt="fool" height="50px"> </a> -->
+                <a class="navbar-brand brand-berkeley" href="/"> CS 170 </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                  <ul class="navbar-nav">
+                      
+
+                      
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" id="schedule-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Schedule
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="schedule-dropdown">
+                            
+                            <a class="dropdown-item " 
+                              href="
+/schedule/discussions/
+">
+                              Discussions
+                              
+                            </a>
+                            
+                            <a class="dropdown-item " 
+                              href="
+/schedule/calendar/
+">
+                              Calendar
+                              
+                            </a>
+                            
+                          </div>
+                        </li>
+                      
+
+                      
+
+                      
+                      <li class="nav-item ">
+                          <a class="nav-link " 
+                            href="
+/staff/
+">
+                            Staff
+                            
+                          </a>
+                        </li>
+                      
+
+                      
+
+                      
+                      <li class="nav-item ">
+                          <a class="nav-link " 
+                            href="
+/resources/
+">
+                            Resources
+                            
+                          </a>
+                        </li>
+                      
+
+                      
+
+                      
+                      <li class="nav-item ">
+                          <a class="nav-link " 
+                            href="
+/syllabus/
+">
+                            Syllabus
+                            
+                          </a>
+                        </li>
+                      
+
+                      
+
+                      
+                      <li class="nav-item ">
+                          <a class="nav-link  text-muted " 
+                            href="
+https://edstem.org/us/courses/35698
+">
+                            Ed
+                            
+                              <span class="oi oi-external-link"></span> 
+                            
+                          </a>
+                        </li>
+                      
+
+                      
+
+                      
+                      <li class="nav-item ">
+                          <a class="nav-link  text-muted " 
+                            href="
+https://bcourses.berkeley.edu/courses/1523347
+">
+                            bCourses
+                            
+                              <span class="oi oi-external-link"></span> 
+                            
+                          </a>
+                        </li>
+                      
+
+                      
+
+                      
+                      <li class="nav-item ">
+                          <a class="nav-link  text-muted " 
+                            href="
+https://oh.cs170.org
+">
+                            Queue
+                            
+                              <span class="oi oi-external-link"></span> 
+                            
+                          </a>
+                        </li>
+                      
+
+                      
+                  </ul>
+                </div>
+            </div>
+          </nav>
+      
+          <div class="container">
+
+               <!--<div class="alert alert-warning">-->
+
+    <!--<span class="oi oi-warning"></span>-->
+
+    <!--<strong>Site Under Construction</strong>-->
+
+<!--    <strong>Outage Updates</strong>: There are assignments that have been extended due to class cancellations.-->
+
+    <!--<ul>-->
+        <!--<li><em>Homework 9</em>: Now due Thursday 10/31. Original deadline was Wednesday 10/30.</li>-->
+    <!--</ul>-->
+
+    <!--For more information or to ask questions, please see the <a href="https://piazza.com/class/jz0o7nf7bd4jp?cid=700">outage index thread</a>.-->
+<!--</div> -->
+
+
+              
+
+<h1 class="mb-4">LaTeX Guide</h1>
+
+
+
+
+
+    <p>You’re welcome to produce your homework PDF in various ways: \(\LaTeX\), some other word processor, or neatly handwriting and scanning. We strongly advise using LaTeX. Here’s why:</p>
+
+<ul>
+  <li>LaTeX documents are beautiful and a joy to read.</li>
+  <li>LaTeX is ubiquitous across mathematics and the sciences, so learning it is a sound investment.</li>
+  <li>Many past CS 170 readers believe that LaTeXed solutions tend to be correct more often.</li>
+  <li>CS170 is typically the class where students take time to learn LaTeX, which is a valuable skill to have.</li>
+</ul>
+
+<p>General Homework template: <a href="/assets/misc/homework_template.tex">homework_template.tex</a></p>
+
+<blockquote>
+  <p>If you would like fancier style, use the <a href="/assets/misc/cs170.sty">cs170.sty file</a>. You can just include it as the same folder as your TeX file and include the line <code class="language-plaintext highlighter-rouge">\usepackage{cs170}</code>.</p>
+</blockquote>
+
+<p>To get started, you’ll need a LaTeX editor, on which you write LaTeX code and compile it to PDF:</p>
+
+<ul>
+  <li>If you want to write and compile on your own local machine, <a href="http://en.wikibooks.org/wiki/LaTeX/Installation">LaTeX Wiki/Installation</a> have installation instructions.</li>
+  <li>If you want to avoid local installation, try <a href="https://www.overleaf.com/">Overleaf</a>. <a href="https://www.overleaf.com/edu/berkeley">Register with your Berkeley email</a> to get a free Professional account.</li>
+</ul>
+
+<p>Now, to start creating LaTeX documents using your editor:</p>
+
+<ul>
+  <li><a href="http://en.wikibooks.org/wiki/LaTeX/Basics">LaTeX Wiki/Basics</a> provides gentle introductions and minimal examples.</li>
+  <li>Find out how to write any symbol in LaTeX using <a href="http://detexify.kirelabs.org/classify.html">Detexify</a> or <a href="https://mathpix.com/">Mathpix</a>.</li>
+</ul>
+
+<p>Alternatively, <a href="http://www.lyx.org/Home">LyX</a> is a version of LaTeX with a GUI. It feels more like the “what you see is what you get” experience of a traditional word processor, while still producing the same beautiful output as raw LaTeX. Here are some tutorials that cover the most basic to slightly advanced LaTeX:</p>
+
+<ul>
+  <li><a href="https://www.overleaf.com/latex/learn/free-online-introduction-to-latex-part-1#.Vd6sv7S57BI">https://www.overleaf.com/latex/learn/free-online-introduction-to-latex-part-1</a></li>
+  <li><a href="https://www.overleaf.com/latex/learn/free-online-introduction-to-latex-part-2">https://www.overleaf.com/latex/learn/free-online-introduction-to-latex-part-2</a></li>
+  <li><a href="https://www.overleaf.com/latex/learn/free-online-introduction-to-latex-part-3">https://www.overleaf.com/latex/learn/free-online-introduction-to-latex-part-3</a></li>
+</ul>
+
+<p>If you get stuck, StackOverflow may be one of your best friends. If you know of other helpful guides or resources, post those too. Happy \(\LaTeX\)ing!</p>
+
+<blockquote>
+  <p>“Every time I read a LaTeX document, I think, wow, this must be correct!”</p>
+
+  <p><em>— Prof. Christos Papadimitriou, CS 170 Spring 2015</em></p>
+</blockquote>
+
+
+
+
+
+
+          </div>
+    </div>
+
+    <footer class="page-footer">
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link text-secondary" href="/">
+                  CS 170
+                </a>
+              </li>
+            
+            <li class="nav-item">
+              <a class="nav-link " 
+                href="
+/schedule/
+">
+                Schedule
+              </a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link " 
+                href="
+/staff/
+">
+                Staff
+              </a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link " 
+                href="
+/resources/
+">
+                Resources
+              </a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link " 
+                href="
+/syllabus/
+">
+                Syllabus
+              </a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link  text-dark " 
+                href="
+https://edstem.org/us/courses/35698
+">
+                Ed
+              </a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link  text-dark " 
+                href="
+https://bcourses.berkeley.edu/courses/1523347
+">
+                bCourses
+              </a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link  text-dark " 
+                href="
+https://oh.cs170.org
+">
+                Queue
+              </a>
+            </li>
+            
+
+            <li class="nav-item">
+              <a class="nav-link text-secondary" href="#">
+                Back to top
+              </a>
+            </li>
+        </ul>
+    </footer>
+  </body>
+</html>
