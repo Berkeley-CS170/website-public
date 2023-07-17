@@ -1,193 +1,239 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="/assets/bootstrap.min.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="/assets/open-sans.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="/assets/main.css" crossorigin="anonymous">
-    <link href="/assets/open-iconic-bootstrap.min.css" rel="stylesheet">
-    <link href="/assets/bootstrap-toc.min.css" rel="stylesheet">
-    <link href="/assets/fullcalendar.min.css" rel="stylesheet">
-    <link href="/assets/fullcalendar-daygrid.min.css" rel="stylesheet">
-    <link href="/assets/fullcalendar-timegrid.min.css" rel="stylesheet">
-    <link href="/assets/fullcalendar-bootstrap.min.css" rel="stylesheet">
-    <link href="/assets/fullcalendar-list.min.css" rel="stylesheet">
+<head>
 
-    <link rel="shortcut icon" type="image/png" href=" /favicon.ico"/>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137968408-2"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
 
-      gtag('config', 'UA-137968408-2');
-    </script>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css"
+    integrity="sha512-rt/SrQ4UNIaGfDyEXZtNcyWvQeOq0QLygHluFQcSjaGB04IxWhal71tKuzP6K8eYXYB6vJV4pHkXcmFGGQ1/0w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="/assets/jquery.min.js" crossorigin="anonymous"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script> -->
-    <script src="/assets/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-    <script src="/assets/bootstrap-toc.min.js"></script>
-    <script src="/assets/moment.min.js"></script>
-    <script src="/assets/fullcalendar.min.js"></script>
-    <script src="/assets/fullcalendar-gcal.min.js"></script>
-    <script src="/assets/fullcalendar-daygrid.min.js"></script>
-    <script src="/assets/fullcalendar-timegrid.min.js"></script>
-    <script src="/assets/fullcalendar-bootstrap.min.js"></script>
-    <script src="/assets/fullcalendar-list.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic.min.css"
+    integrity="sha512-LeCmts7kEi09nKc+DwGJqDV+dNQi/W8/qb0oUSsBLzTYiBwxj0KBlAow2//jV7jwEHwSCPShRN2+IWwWcn1x7Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.css" />
 
-    
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/4.2.0/core/main.min.css"
+    integrity="sha512-IBfPhioJ2AoH2nST7c0jwU0A3RJ7hwIb3t+nYR4EJ5n9P6Nb/wclzcQNbTd4QFX1lgRAtTT+axLyK7VUCDtjWA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/4.2.0/bootstrap/main.min.css"
+    integrity="sha512-mK6wVf3xsmNcJnp0ZI+YORb6jQBsAIIwkOfMV47DHIiwvkSgR0t7GNCVBiotLQWWR8AND/LxWHAatnja1fU7kQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/4.2.0/list/main.min.css"
+    integrity="sha512-tNMyUN1gVBvqtboKfcOFOiiDrDR2yNVwRDOD/O+N37mIvlJY5d5bZ0JeUydjqD8evWgE2cF48Gm4KvQzglN0fg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/4.2.0/daygrid/main.min.css"
+    integrity="sha512-CN6oL2X5VC0thwTbojxZ02e8CVs7rii0yhTLsgsdId8JDlcLENaqISvkSLFUuZk6NcPeB+FbaTfZorhbSqcRYg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/4.2.0/timegrid/main.min.css"
+    integrity="sha512-/Jnt6fX98n8zZyuCt4K81+1eQJhWQn/vyMph1UvHywyziYDbu9DFGcJoW8U73m/rkaQBIEAJeoEj+2Rrx4tFyw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <title> CS 170 </title>
-  </head>
-  <body>
+  <!-- Make main.css last to overwrite all other default -->
+  <link rel="stylesheet" href="/assets/main.css" crossorigin="anonymous">
 
-    <div class="wrapper bg-white">
-        <nav class="navbar navbar-light navbar-expand-md align-items-center">
-            <div class="container">
-                <!-- <a class="navbar-brand brand-berkeley" href="/fool/'"> <img src="/assets/fool.gif" alt="fool" height="50px"> </a> -->
-                <a class="navbar-brand brand-berkeley" href="/"> CS 170 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
+  <link rel="shortcut icon" type="image/png" href=" /favicon.ico" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137968408-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-137968408-2');
+  </script>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+    integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.3/moment.min.js"
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/4.2.0/core/main.min.js"
+    integrity="sha512-bg9ZLPorHGcaLHI2lZEusTDKo0vHdaPOjVOONi4XLJ2N/c1Jn2RVI9qli4sNAziZImX42ecwywzIZiZEzZhokQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/4.2.0/bootstrap/main.min.js"
+    integrity="sha512-uuua5cS/LUZHEtZiY2s+SRn0h46TbLZjcaf7fztYqdzM+a0t81kw05yLZSjwF3l3lonm53GZ45rSSzAWAwA5Sg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/4.2.0/list/main.min.js"
+    integrity="sha512-Iw4G4+WD3E3F0M+wVZ95nlnifX1xk2JToaD4+AB537HmOImFi79BTtWma57mJeEnK2qNTOgZrYLtAHVsNazzqg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/4.2.0/daygrid/main.min.js"
+    integrity="sha512-kebSy5Iu+ouq4/swjgEKwa217P2jf/hNYtFEHw7dT+8iLhOKB5PG5xaAMaVyxRK7OT/ddoGCFrg8tslo8SIMmg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/4.2.0/timegrid/main.min.js"
+    integrity="sha512-APuj9Rm7J37dj8cRB1qwznH+zrWD7/vkaodDwJVxpdk72m5c9u8mbbdLHn6JnSw5M4AhV8Zb1HnLrNMGoOfR/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/4.2.0/google-calendar/main.min.js"
+    integrity="sha512-BoAgsM4oiTupJhr6PT2mDylTSfGrqvhHComA7lEqIbA2aFrU7a2MG6u5sX+IqbeBaIUefcC9dtlT+eUhz3f64g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  
+
+  <title> CS 170 </title>
+</head>
+
+<body>
+
+  <div class="wrapper bg-white">
+    <nav class="navbar navbar-light navbar-expand-md align-items-center">
+      <div class="container">
+        <!-- <a class="navbar-brand brand-berkeley" href="/fool/'"> <img src="/assets/fool.gif" alt="fool" height="50px"> </a> -->
+        <a class="navbar-brand brand-berkeley" href="/"> CS 170 </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav">
             
-                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                  <ul class="navbar-nav">
-                      
 
-                      
-                      <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" id="schedule-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Schedule
-                          </a>
-                          <div class="dropdown-menu" aria-labelledby="schedule-dropdown">
-                            
-                            <a class="dropdown-item " 
-                              href="
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="schedule-dropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Schedule
+              </a>
+              <div class="dropdown-menu" aria-labelledby="schedule-dropdown">
+                
+                <a class="dropdown-item "
+                  href="
 /schedule/discussions/
 ">
-                              Discussions
-                              
-                            </a>
-                            
-                            <a class="dropdown-item " 
-                              href="
+                  Discussions
+                  
+                </a>
+                
+                <a class="dropdown-item "
+                  href="
 /schedule/calendar/
 ">
-                              Calendar
-                              
-                            </a>
-                            
-                          </div>
-                        </li>
-                      
+                  Calendar
+                  
+                </a>
+                
+              </div>
+            </li>
+            
 
-                      
+            
 
-                      
-                      <li class="nav-item  active ">
-                          <a class="nav-link " 
-                            href="
+            
+            <li class="nav-item  active ">
+              <a class="nav-link "
+                href="
 /staff/
 ">
-                            Staff
-                            
-                          </a>
-                        </li>
-                      
+                Staff
+                
+              </a>
+            </li>
+            
 
-                      
+            
 
-                      
-                      <li class="nav-item ">
-                          <a class="nav-link " 
-                            href="
+            
+            <li class="nav-item ">
+              <a class="nav-link "
+                href="
 /resources/
 ">
-                            Resources
-                            
-                          </a>
-                        </li>
-                      
+                Resources
+                
+              </a>
+            </li>
+            
 
-                      
+            
 
-                      
-                      <li class="nav-item ">
-                          <a class="nav-link " 
-                            href="
+            
+            <li class="nav-item ">
+              <a class="nav-link "
+                href="
 /syllabus/
 ">
-                            Syllabus
-                            
-                          </a>
-                        </li>
-                      
+                Syllabus
+                
+              </a>
+            </li>
+            
 
-                      
+            
 
-                      
-                      <li class="nav-item ">
-                          <a class="nav-link  text-muted " 
-                            href="
+            
+            <li class="nav-item ">
+              <a class="nav-link  text-muted "
+                href="
 https://edstem.org/us/courses/35698
 ">
-                            Ed
-                            
-                              <span class="oi oi-external-link"></span> 
-                            
-                          </a>
-                        </li>
-                      
+                Ed
+                
+                <span class="oi oi-external-link"></span>
+                
+              </a>
+            </li>
+            
 
-                      
+            
 
-                      
-                      <li class="nav-item ">
-                          <a class="nav-link  text-muted " 
-                            href="
+            
+            <li class="nav-item ">
+              <a class="nav-link  text-muted "
+                href="
 https://bcourses.berkeley.edu/courses/1523347
 ">
-                            bCourses
-                            
-                              <span class="oi oi-external-link"></span> 
-                            
-                          </a>
-                        </li>
-                      
+                bCourses
+                
+                <span class="oi oi-external-link"></span>
+                
+              </a>
+            </li>
+            
 
-                      
+            
 
-                      
-                      <li class="nav-item ">
-                          <a class="nav-link  text-muted " 
-                            href="
+            
+            <li class="nav-item ">
+              <a class="nav-link  text-muted "
+                href="
 https://oh.cs170.org
 ">
-                            Queue
-                            
-                              <span class="oi oi-external-link"></span> 
-                            
-                          </a>
-                        </li>
-                      
+                Queue
+                
+                <span class="oi oi-external-link"></span>
+                
+              </a>
+            </li>
+            
 
-                      
-                  </ul>
-                </div>
-            </div>
-          </nav>
-      
-          <div class="container">
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-               <!--<div class="alert alert-warning">-->
+    <div class="container">
+
+       <!--<div class="alert alert-warning">-->
 
     <!--<span class="oi oi-warning"></span>-->
 
@@ -203,7 +249,7 @@ https://oh.cs170.org
 <!--</div> -->
 
 
-              
+      
 
 <h1 class="mb-4">Staff</h1>
 
@@ -223,86 +269,9 @@ https://oh.cs170.org
 
     
         
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
             <div class="media col-md-6 my-4">
     
-        
-        <div style="background-image: url(/assets/staff-images/john-wright.jpg)" class="mr-3 rounded-circle staff-image"></div>
+        <div style="background-image: url(/assets/pnpenguin.png)" class="mr-3 rounded-circle staff-image"></div>
     
     <div class="media-body">
         <h5 class="my-0">
@@ -340,43 +309,14 @@ https://oh.cs170.org
 
     
         
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
             <div class="media col-md-6 my-4">
     
-        
-        <div style="background-image: url(/assets/staff-images/prasad-raghavendra.jpg)" class="mr-3 rounded-circle staff-image"></div>
+        <div style="background-image: url(/assets/pnpenguin.png)" class="mr-3 rounded-circle staff-image"></div>
     
     <div class="media-body">
         <h5 class="my-0">
             
-            Prasad Raghavendra
+            Nika Haghtalab
             
         </h5>
         <p class="my-1">
@@ -384,10 +324,10 @@ https://oh.cs170.org
            <span class="text-muted">Instructor</span>
            &bull;
         
-        prasad@cs.
+        nika@
         
             &bull;
-            <a href="https://people.eecs.berkeley.edu/~prasad/">website</a>
+            <a href="https://people.eecs.berkeley.edu/~nika/">website</a>
         
         </p>
 
@@ -396,66 +336,6 @@ https://oh.cs170.org
     </div>
 </div>
 
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
         
     
 
@@ -468,1491 +348,6 @@ https://oh.cs170.org
 <h2 class="mv-5">TAs</h2>
 
 <div class="row">
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-            <div class="media col-md-6 my-4">
-    
-        <div style="background-image: url(/assets/pnpenguin.png)" class="mr-3 rounded-circle staff-image"></div>
-    
-    <div class="media-body">
-        <h5 class="my-0">
-            
-            Ansh Nagda
-            
-                <span class="text-muted">
-                    (He/Him)
-                </span>
-            
-        </h5>
-        <p class="my-1">
-        
-           <span class="text-muted">Head TA</span>
-           &bull;
-        
-        anshnagda@
-        
-        </p>
-
-        
-        
-            <span class="staff-bio">
-                <p>Hi! I’m a second year PhD student in the CS theory group. Apart from my primary interests of math and CS theory, I’ve also been getting into origami, table tennis, badminton, and video games. Looking forward to work with you all this semester!</p>
-
-            </small>
-        
-    </div>
-</div>
-
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-            <div class="media col-md-6 my-4">
-    
-        
-        <div style="background-image: url(/assets/staff-images/tianchen-liu.jpg)" class="mr-3 rounded-circle staff-image"></div>
-    
-    <div class="media-body">
-        <h5 class="my-0">
-            
-            Tianchen Liu
-            
-                <span class="text-muted">
-                    (He series)
-                </span>
-            
-        </h5>
-        <p class="my-1">
-        
-           <span class="text-muted">Head TA</span>
-           &bull;
-        
-        tianchenliu@
-        
-            &bull;
-            <a href="https://tc-liu.github.io/">website</a>
-        
-        </p>
-
-        
-        
-            <span class="staff-bio">
-                <p>you just drank half and half, baby</p>
-
-            </small>
-        
-    </div>
-</div>
-
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-            <div class="media col-md-6 my-4">
-    
-        
-        <div style="background-image: url(/assets/staff-images/wilson-wu.jpg)" class="mr-3 rounded-circle staff-image"></div>
-    
-    <div class="media-body">
-        <h5 class="my-0">
-            
-            Wilson Wu
-            
-        </h5>
-        <p class="my-1">
-        
-           <span class="text-muted">Head TA</span>
-           &bull;
-        
-        nosliw@
-        
-        </p>
-
-        
-        
-            <span class="staff-bio">
-                <p>Knock knock, who’s there?<br />Wilson.<br />Wilson Who?<br />Wilson Wu, not Wilson Who. Anyway, I’m a third year CS major, and this is my fourth semester on course staff. Hope you have a great semester!</p>
-
-            </small>
-        
-    </div>
-</div>
-
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-
-    
-
-    
-        
-            <div class="media col-md-6 my-4">
-    
-        
-        <div style="background-image: url(/assets/staff-images/ajit-kadaveru.jpg)" class="mr-3 rounded-circle staff-image"></div>
-    
-    <div class="media-body">
-        <h5 class="my-0">
-            
-            Ajit Kadaveru
-            
-                <span class="text-muted">
-                    (he/him/his)
-                </span>
-            
-        </h5>
-        <p class="my-1">
-        
-           <span class="text-muted">TA</span>
-           &bull;
-        
-        ajit.kadaveru@
-        
-        </p>
-
-        
-        
-            <span class="staff-bio">
-                <p>Hi! I’m a junior CS major from Northern Virginia. My hobbies include basketball, tennis, table tennis, chess, competitive programming, and watching youtube. I hope you enjoy this amazing course at least as much as I did! Please message me about anything, even if it’s just to be friends :) !!!</p>
-
-            </small>
-        
-    </div>
-</div>
-
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-            <div class="media col-md-6 my-4">
-    
-        
-        <div style="background-image: url(/assets/staff-images/allison-li.jpg)" class="mr-3 rounded-circle staff-image"></div>
-    
-    <div class="media-body">
-        <h5 class="my-0">
-            
-            Allison Li
-            
-        </h5>
-        <p class="my-1">
-        
-           <span class="text-muted">TA</span>
-           &bull;
-        
-        y.allisonli@
-        
-        </p>
-
-        
-        
-            <span class="staff-bio">
-                <p>Hi! I’m a senior studying CS and Applied Math from San Jose, CA. In my free time, I enjoy going to concerts, playing viola, and watching cooking videos. I hope you have a great time in 170!</p>
-
-            </small>
-        
-    </div>
-</div>
-
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-            <div class="media col-md-6 my-4">
-    
-        
-        <div style="background-image: url(/assets/staff-images/chris-liu.jpg)" class="mr-3 rounded-circle staff-image"></div>
-    
-    <div class="media-body">
-        <h5 class="my-0">
-            
-            Chris Liu
-            
-                <span class="text-muted">
-                    (he/him)
-                </span>
-            
-        </h5>
-        <p class="my-1">
-        
-           <span class="text-muted">TA</span>
-           &bull;
-        
-        chris-liu@
-        
-            &bull;
-            <a href="https://calico.berkeley.edu">website</a>
-        
-        </p>
-
-        
-        
-            <span class="staff-bio">
-                <p>mfw i hit the woah and texting michella obama</p>
-
-            </small>
-        
-    </div>
-</div>
-
-        
-    
-
-    
-        
-    
-
-    
-        
-            <div class="media col-md-6 my-4">
-    
-        
-        <div style="background-image: url(/assets/staff-images/conner-manuel.jpg)" class="mr-3 rounded-circle staff-image"></div>
-    
-    <div class="media-body">
-        <h5 class="my-0">
-            
-            Conner Manuel
-            
-                <span class="text-muted">
-                    (he series)
-                </span>
-            
-        </h5>
-        <p class="my-1">
-        
-           <span class="text-muted">TA</span>
-           &bull;
-        
-        manuel.conner.g@
-        
-            &bull;
-            <a href="https://connermanuel.com">website</a>
-        
-        </p>
-
-        
-        
-            <span class="staff-bio">
-                <p>What I say is true. Anyone can cook. But only the fearless can be great.</p>
-
-            </small>
-        
-    </div>
-</div>
-
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-            <div class="media col-md-6 my-4">
-    
-        
-        <div style="background-image: url(/assets/staff-images/james-deloye.jpg)" class="mr-3 rounded-circle staff-image"></div>
-    
-    <div class="media-body">
-        <h5 class="my-0">
-            
-            James DeLoye
-            
-                <span class="text-muted">
-                    (he/him)
-                </span>
-            
-        </h5>
-        <p class="my-1">
-        
-           <span class="text-muted">TA</span>
-           &bull;
-        
-        jdeloye@
-        
-            &bull;
-            <a href="https://jamesdeloye.dev/">website</a>
-        
-        </p>
-
-        
-        
-            <span class="staff-bio">
-                <p>Hi all, I’m a third year CS major with interests in applying optimization methods to computational biology! This is my second time on 170 staff and fourth semester teaching at Berkeley. In my free time I like listening to music (hiphop, kpop, pop), cooking/baking, working out, and building PCs. I look forward to teaching you all this semester!</p>
-
-            </small>
-        
-    </div>
-</div>
-
-        
-    
-
-    
-        
     
 
     
@@ -1978,7 +373,7 @@ https://oh.cs170.org
         </h5>
         <p class="my-1">
         
-           <span class="text-muted">TA</span>
+           <span class="text-muted">Head TA</span>
            &bull;
         
         jonnypei@
@@ -2007,18 +402,152 @@ https://oh.cs170.org
 
     
         
+    
+
+    
+        
+    
+
+
+    
+
+    
+        
+    
+
+    
+        
+    
+
+    
+        
+    
+
+    
+        
+    
+
+    
+        
+    
+
+
+    
+
+    
+        
+    
+
+    
+        
+    
+
+    
+        
+    
+
+    
+        
+    
+
+    
+        
+    
+
+
+    
+
+    
+        
+    
+
+    
+        
+    
+
+    
+        
+    
+
+    
+        
+    
+
+    
+        
+    
+
+
+    
+
+    
+        
+    
+
+    
+        
+    
+
+    
+        
+    
+
+    
+        
+    
+
+    
+        
+    
+
+
+    
+
+    
+        
+    
+
+    
+        
+    
+
+    
+        
+    
+
+    
+        
+    
+
+    
+        
+    
+
+
+    
+
+    
+        
+    
+
+    
+        
+    
+
+    
+        
             <div class="media col-md-6 my-4">
     
         
-        <div style="background-image: url(/assets/staff-images/juanky-perdomo.jpg)" class="mr-3 rounded-circle staff-image"></div>
+        <div style="background-image: url(/assets/staff-images/konata.png)" class="mr-3 rounded-circle staff-image"></div>
     
     <div class="media-body">
         <h5 class="my-0">
             
-            Juanky Perdomo
+            Konata Izumi
             
                 <span class="text-muted">
-                    (he/him)
+                    (she/her/hers)
                 </span>
             
         </h5>
@@ -2027,17 +556,17 @@ https://oh.cs170.org
            <span class="text-muted">TA</span>
            &bull;
         
-        jcperdomo@
+        meganekkogekirabu@
         
             &bull;
-            <a href="https://jcperdomo.org">website</a>
+            <a href="https://www.crunchyroll.com/series/GY8V7NP8Y">website</a>
         
         </p>
 
         
         
             <span class="staff-bio">
-                <p>HI! I a graduate student here at UC Berkeley in the EECS department! My research is on the theory of machine learning within society. I’m originally from San Juan, Puerto Rico.</p>
+                <p>Hi All! I’m Konata. I’m from Kasukabe in Saitama, Japan. I love algorithms and chocolate rolls. =ω=</p>
 
             </small>
         
@@ -2055,542 +584,7 @@ https://oh.cs170.org
         
     
 
-    
-        
-            <div class="media col-md-6 my-4">
-    
-        
-        <div style="background-image: url(/assets/staff-images/lance-mathias.jpg)" class="mr-3 rounded-circle staff-image"></div>
-    
-    <div class="media-body">
-        <h5 class="my-0">
-            
-            Lance Mathias
-            
-                <span class="text-muted">
-                    (he/him)
-                </span>
-            
-        </h5>
-        <p class="my-1">
-        
-           <span class="text-muted">TA</span>
-           &bull;
-        
-        lmathias@
-        
-        </p>
 
-        
-        
-            <span class="staff-bio">
-                <p>Hi! I’m a sophomore CS major and applied math minor from the bay area. I enjoy cooking, biking, watching kdramas, and diving deep into complexity theory. This semester I’m trying to read more, so if you see me, give me a book recommendation!</p>
-
-            </small>
-        
-    </div>
-</div>
-
-        
-    
-
-    
-        
-    
-
-    
-        
-            <div class="media col-md-6 my-4">
-    
-        
-        <div style="background-image: url(/assets/staff-images/parth-asawa.jpg)" class="mr-3 rounded-circle staff-image"></div>
-    
-    <div class="media-body">
-        <h5 class="my-0">
-            
-            Parth Asawa
-            
-                <span class="text-muted">
-                    (he/him)
-                </span>
-            
-        </h5>
-        <p class="my-1">
-        
-           <span class="text-muted">TA</span>
-           &bull;
-        
-        pgasawa@
-        
-        </p>
-
-        
-        
-            <span class="staff-bio">
-                <p>Hi! I’m a second year majoring in EECS and Business Administration from the Bay Area. I love playing ultimate frisbee, bouldering, social deduction board games, chess, and old .io games. Hope y’all enjoy the material and CS 170 as much as I did!</p>
-
-            </small>
-        
-    </div>
-</div>
-
-        
-    
-
-    
-        
-    
-
-    
-        
-            <div class="media col-md-6 my-4">
-    
-        
-        <div style="background-image: url(/assets/staff-images/ramanan-abeyakaran.jpg)" class="mr-3 rounded-circle staff-image"></div>
-    
-    <div class="media-body">
-        <h5 class="my-0">
-            
-            Ramanan Abeyakaran
-            
-                <span class="text-muted">
-                    (He/Him)
-                </span>
-            
-        </h5>
-        <p class="my-1">
-        
-           <span class="text-muted">TA</span>
-           &bull;
-        
-        ram.abey2001@
-        
-            &bull;
-            <a href="https://www.linkedin.com/in/babeyakaran/">website</a>
-        
-        </p>
-
-        
-        
-            <span class="staff-bio">
-                <p>Hey everyone! My name is Ramanan, and I’m a CS and Stats student from Atlanta, GA. I love soccer (PSG Fan), tennis and cooking, and I love CS 170! Feel free to reach out to me if you have any questions at all or just want to talk :)</p>
-
-            </small>
-        
-    </div>
-</div>
-
-        
-    
-
-    
-        
-            <div class="media col-md-6 my-4">
-    
-        
-        <div style="background-image: url(/assets/staff-images/yimo-xu.jpg)" class="mr-3 rounded-circle staff-image"></div>
-    
-    <div class="media-body">
-        <h5 class="my-0">
-            
-            Ruomu Xu
-            
-                <span class="text-muted">
-                    (he/him/his)
-                </span>
-            
-        </h5>
-        <p class="my-1">
-        
-           <span class="text-muted">TA</span>
-           &bull;
-        
-        xuyimo@
-        
-            &bull;
-            <a href="https://ocf.io/rmxu/">website</a>
-        
-        </p>
-
-        
-        
-            <span class="staff-bio">
-                <p>I have written <a href="https://www.ocf.berkeley.edu/~rmxu/cs170/bio\">a truly marvellous bio</a> that this margin is too narrow to contain.<br />Favourite anime: Pop Team Epic, highly recommend.</p>
-
-            </small>
-        
-    </div>
-</div>
-
-        
-    
-
-    
-        
-            <div class="media col-md-6 my-4">
-    
-        
-        <div style="background-image: url(/assets/staff-images/sam-gunn.png)" class="mr-3 rounded-circle staff-image"></div>
-    
-    <div class="media-body">
-        <h5 class="my-0">
-            
-            Sam Gunn
-            
-                <span class="text-muted">
-                    (He/Him)
-                </span>
-            
-        </h5>
-        <p class="my-1">
-        
-           <span class="text-muted">TA</span>
-           &bull;
-        
-        gunn@
-        
-            &bull;
-            <a href="https://people.eecs.berkeley.edu/~gunn/">website</a>
-        
-        </p>
-
-        
-        
-            <span class="staff-bio">
-                <p>I’m a PhD student in the theory group. I like quantum cryptography. I did my undergrad in math, so I’m looking forward to finally learning what an algorithm is with all of you!</p>
-
-            </small>
-        
-    </div>
-</div>
-
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-            <div class="media col-md-6 my-4">
-    
-        <div style="background-image: url(/assets/pnpenguin.png)" class="mr-3 rounded-circle staff-image"></div>
-    
-    <div class="media-body">
-        <h5 class="my-0">
-            
-            Siqi Liu
-            
-                <span class="text-muted">
-                    (She/her/hers)
-                </span>
-            
-        </h5>
-        <p class="my-1">
-        
-           <span class="text-muted">TA</span>
-           &bull;
-        
-        sliu18@
-        
-        </p>
-
-        
-        
-            <span class="staff-bio">
-                <p>Hi all. I am a fifth-year PhD student interested in probability, combinatorics, and computational complexity. I really enjoyed CS 170 years ago as a student, and hope you will also enjoy the learning process!</p>
-
-            </small>
-        
-    </div>
-</div>
-
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-            <div class="media col-md-6 my-4">
-    
-        
-        <div style="background-image: url(/assets/staff-images/viraj-ramakrishnan.jpg)" class="mr-3 rounded-circle staff-image"></div>
-    
-    <div class="media-body">
-        <h5 class="my-0">
-            
-            Viraj Ramakrishnan
-            
-                <span class="text-muted">
-                    (he/him)
-                </span>
-            
-        </h5>
-        <p class="my-1">
-        
-           <span class="text-muted">TA</span>
-           &bull;
-        
-        virajramakrishnan@
-        
-        </p>
-
-        
-        
-            <span class="staff-bio">
-                <p>Hey! I’m Viraj, and I’m really looking forward to teaching y’all 170! Outside of class, I like to play guitar, sing, go for runs, and make eclectic and strangely named spotify playlists. See you soon!</p>
-
-            </small>
-        
-    </div>
-</div>
-
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-            <div class="media col-md-6 my-4">
-    
-        
-        <div style="background-image: url(/assets/staff-images/zo%C3%AB-bell.png)" class="mr-3 rounded-circle staff-image"></div>
-    
-    <div class="media-body">
-        <h5 class="my-0">
-            
-            Zoë Bell
-            
-                <span class="text-muted">
-                    (she/her)
-                </span>
-            
-        </h5>
-        <p class="my-1">
-        
-           <span class="text-muted">TA</span>
-           &bull;
-        
-        zbell@
-        
-            &bull;
-            <a href="https://sites.google.com/berkeley.edu/zoebell/">website</a>
-        
-        </p>
-
-        
-        
-            <span class="staff-bio">
-                <p>I am a 2nd-year CS theory PhD student here at Berkeley. I did my undergrad at Harvey Mudd College in Southern California, where I majored in mathematics and did a minor in STS (Science, Technology, and Society). (One day I hope to complete my journey back up the coast to my hometown of Seattle…) Not only do I love doing the math puzzles which are the heart of algorithms, but I am also fascinated by how proofs produce certainty, the deeply social and collaborative nature of doing mathematics, and what more might be asked of us beyond traditional correctness and efficiency when we contextualize these algorithms in their social contexts. If any of these topics sound interesting to you, I am always excited to discuss them!</p>
-
-            </small>
-        
-    </div>
-</div>
-
-        
-    
-
-
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
     
 
     
@@ -2626,75 +620,9 @@ https://oh.cs170.org
 
     
         
-            <div class="media col-md-6 my-4">
-    
-        
-        <div style="background-image: url(/assets/staff-images/albert-guo.jpg)" class="mr-3 rounded-circle staff-image"></div>
-    
-    <div class="media-body">
-        <h5 class="my-0">
-            
-            Albert Guo
-            
-        </h5>
-        <p class="my-1">
-        
-           <span class="text-muted">Reader</span>
-           &bull;
-        
-        albertguo888@
-        
-        </p>
-
-        
-        
-            <span class="staff-bio">
-                <p>Hi, my name is Albert and I’m a 2nd year EECS student. I like to play tennis, TFT, and also enjoy anime. Did you know some people don’t spit out the seeds when they eat pomegranates? So weird. Anyways, look forward to helping you all!</p>
-
-            </small>
-        
-    </div>
-</div>
-
-        
     
 
     
-        
-            <div class="media col-md-6 my-4">
-    
-        
-        <div style="background-image: url(/assets/staff-images/alex-liang.jpg)" class="mr-3 rounded-circle staff-image"></div>
-    
-    <div class="media-body">
-        <h5 class="my-0">
-            
-            Alex Liang
-            
-                <span class="text-muted">
-                    (he/him)
-                </span>
-            
-        </h5>
-        <p class="my-1">
-        
-           <span class="text-muted">Reader</span>
-           &bull;
-        
-        degaliang@
-        
-        </p>
-
-        
-        
-            <span class="staff-bio">
-                <p>Hi, I’m Alex and I’m a fourth year studying CS. I really hate XFINITY as my pings in League of Legends still exceed 100ms despite paying them 70 dollars each month.</p>
-
-            </small>
-        
-    </div>
-</div>
-
         
     
 
@@ -2707,374 +635,15 @@ https://oh.cs170.org
             <div class="media col-md-6 my-4">
     
         
-        <div style="background-image: url(/assets/staff-images/amar-shah.jpg)" class="mr-3 rounded-circle staff-image"></div>
-    
-    <div class="media-body">
-        <h5 class="my-0">
-            
-            Amar Shah
-            
-                <span class="text-muted">
-                    (he/him)
-                </span>
-            
-        </h5>
-        <p class="my-1">
-        
-           <span class="text-muted">Reader</span>
-           &bull;
-        
-        amarshah1000@
-        
-        </p>
-
-        
-        
-            <span class="staff-bio">
-                <p>Hi. I’m Amar. I’m a math and CS major from the Bay Area. I am interested in baking, logic, and cycling. Feel free to talk to me about those things, CS 170, or anything else!</p>
-
-            </small>
-        
-    </div>
-</div>
-
-        
-    
-
-    
-        
-            <div class="media col-md-6 my-4">
-    
-        
-        <div style="background-image: url(/assets/staff-images/andrew-huang.jpg)" class="mr-3 rounded-circle staff-image"></div>
-    
-    <div class="media-body">
-        <h5 class="my-0">
-            
-            Andrew Huang
-            
-                <span class="text-muted">
-                    (he/him/his)
-                </span>
-            
-        </h5>
-        <p class="my-1">
-        
-           <span class="text-muted">Reader</span>
-           &bull;
-        
-        andrewhuang56@
-        
-        </p>
-
-        
-        
-            <span class="staff-bio">
-                <p>Hello! I am very excited to be a CS 170 reader this semester. I am a second-year math and CS major from New England who also enjoys playing tennis and card games and finding places with quality AC. If you want to talk with someone about CS 170 as a whole, theoretical CS, or anything else, feel free to contact me!</p>
-
-            </small>
-        
-    </div>
-</div>
-
-        
-    
-
-    
-        
-            <div class="media col-md-6 my-4">
-    
-        
-        <div style="background-image: url(/assets/staff-images/anirban-sarkar.jpg)" class="mr-3 rounded-circle staff-image"></div>
-    
-    <div class="media-body">
-        <h5 class="my-0">
-            
-            Anirban Sarkar
-            
-                <span class="text-muted">
-                    (he/him series)
-                </span>
-            
-        </h5>
-        <p class="my-1">
-        
-           <span class="text-muted">Reader</span>
-           &bull;
-        
-        sarkar@
-        
-        </p>
-
-        
-        
-            <span class="staff-bio">
-                <p>Hi! I’m Anirban, a third year EECS major originally from Okemos, Michigan(best state in the Midwest.) My main hobbies include playing tennis, watching NFL games and playing fantasy football, watching anime (One Piece and Gintama are goated), and trying new food places. Looking forward to meeting y’all! Feel free to reach out about anything :)</p>
-
-            </small>
-        
-    </div>
-</div>
-
-        
-    
-
-    
-        
-    
-
-    
-        
-            <div class="media col-md-6 my-4">
-    
-        
-        <div style="background-image: url(/assets/staff-images/arjun-patrawala.jpg)" class="mr-3 rounded-circle staff-image"></div>
-    
-    <div class="media-body">
-        <h5 class="my-0">
-            
-            Arjun Patrawala
-            
-                <span class="text-muted">
-                    (he/him)
-                </span>
-            
-        </h5>
-        <p class="my-1">
-        
-           <span class="text-muted">Reader</span>
-           &bull;
-        
-        arjunpatrawala@
-        
-            &bull;
-            <a href="https://arjunpatrawala.com/teaching/cs170">website</a>
-        
-        </p>
-
-        
-        
-            <span class="staff-bio">
-                <p>Hey! I’m a sophomore from the Bay Area studying CS + math. I enjoy learning, teaching, big ideas, and good discussions. More cool things: cooking, running, programming, card games, music, photography, machine learning, and more things I cannot remember right now.</p>
-
-            </small>
-        
-    </div>
-</div>
-
-        
-    
-
-    
-        
-            <div class="media col-md-6 my-4">
-    
-        
-        <div style="background-image: url(/assets/staff-images/austen-liao.png)" class="mr-3 rounded-circle staff-image"></div>
-    
-    <div class="media-body">
-        <h5 class="my-0">
-            
-            Austen Liao
-            
-                <span class="text-muted">
-                    (he/him)
-                </span>
-            
-        </h5>
-        <p class="my-1">
-        
-           <span class="text-muted">Reader</span>
-           &bull;
-        
-        austenliao@
-        
-        </p>
-
-        
-        
-            <span class="staff-bio">
-                <p>Hi everyone! I’m Austen, a third year CS major, and this is my first time serving on 170 course staff. Feel free to reach out to me for anything, especially if you want to talk about algorithms, probability, and Kirby &lt;3</p>
-
-            </small>
-        
-    </div>
-</div>
-
-        
-    
-
-    
-        
-            <div class="media col-md-6 my-4">
-    
-        
-        <div style="background-image: url(/assets/staff-images/avinash-rao.png)" class="mr-3 rounded-circle staff-image"></div>
-    
-    <div class="media-body">
-        <h5 class="my-0">
-            
-            Avinash Rao
-            
-                <span class="text-muted">
-                    (he/him)
-                </span>
-            
-        </h5>
-        <p class="my-1">
-        
-           <span class="text-muted">Reader</span>
-           &bull;
-        
-        avinashrao2002@
-        
-            &bull;
-            <a href="https://www.linkedin.com/in/avinashrao2002/">website</a>
-        
-        </p>
-
-        
-        
-            <span class="staff-bio">
-                <p>Hey everyone, I’m a junior from the Bay Area studying EECS and I’m excited to be on 170 course staff! You can usually find me playing basketball, listening to music, collecting vinyls, trying new restaurants, and/or exploring Berkeley/SF. Feel free to reach out if you need anything.</p>
-
-            </small>
-        
-    </div>
-</div>
-
-        
-    
-
-    
-        
-            <div class="media col-md-6 my-4">
-    
-        
-        <div style="background-image: url(/assets/staff-images/bryan-chu.jpg)" class="mr-3 rounded-circle staff-image"></div>
-    
-    <div class="media-body">
-        <h5 class="my-0">
-            
-            Bryan Chu
-            
-                <span class="text-muted">
-                    (he/him)
-                </span>
-            
-        </h5>
-        <p class="my-1">
-        
-           <span class="text-muted">Reader</span>
-           &bull;
-        
-        bryanchu8@
-        
-        </p>
-
-        
-        
-            <span class="staff-bio">
-                <p>Hi! I’m a junior studying CS from Saratoga, California. In my free time, I like to be active and exercise as well as binge k-dramas. I’m also a big Warriors and 49ers fan. Feel free to reach out to me about anything, 170 related or not!</p>
-
-            </small>
-        
-    </div>
-</div>
-
-        
-    
-
-    
-        
-    
-
-    
-        
-            <div class="media col-md-6 my-4">
-    
-        
-        <div style="background-image: url(/assets/staff-images/colin-cai.jpg)" class="mr-3 rounded-circle staff-image"></div>
-    
-    <div class="media-body">
-        <h5 class="my-0">
-            
-            Colin Cai
-            
-                <span class="text-muted">
-                    (he/him/his)
-                </span>
-            
-        </h5>
-        <p class="my-1">
-        
-           <span class="text-muted">Reader</span>
-           &bull;
-        
-        cai9@
-        
-        </p>
-
-        
-        
-            <span class="staff-bio">
-                <p>Hi! My name is Colin and I’m a third year EECS major from Vancouver, BC, Canada. In my free time, I like eating, cooking, and playing games. CS170 was one of my favorite courses here at Berkeley, so hope you all enjoy this class as much as I did! :)</p>
-
-            </small>
-        
-    </div>
-</div>
-
-        
-    
-
-    
-        
-    
-
-    
-        
-            <div class="media col-md-6 my-4">
-    
         <div style="background-image: url(/assets/pnpenguin.png)" class="mr-3 rounded-circle staff-image"></div>
     
     <div class="media-body">
         <h5 class="my-0">
             
-            Derek Luan
-            
-        </h5>
-        <p class="my-1">
-        
-           <span class="text-muted">Reader</span>
-           &bull;
-        
-        derek.luan@
-        
-        </p>
-
-        
-        
-    </div>
-</div>
-
-        
-    
-
-    
-        
-            <div class="media col-md-6 my-4">
-    
-        
-        <div style="background-image: url(/assets/staff-images/eric-nguyen.jpg)" class="mr-3 rounded-circle staff-image"></div>
-    
-    <div class="media-body">
-        <h5 class="my-0">
-            
-            Eric Nguyen
+            PNPenguin
             
                 <span class="text-muted">
-                    (he/him)
+                    (any/all)
                 </span>
             
         </h5>
@@ -3083,626 +652,15 @@ https://oh.cs170.org
            <span class="text-muted">Reader</span>
            &bull;
         
-        egnguyen@
+        cs170@
         
         </p>
 
         
         
-            <span class="staff-bio">
-                <p>Hi! I’m a third year CS major from San Jose, CA. I love cats, cars, and Hearthstone. Feel free to reach out whenever!</p>
-
-            </small>
-        
     </div>
 </div>
 
-        
-    
-
-    
-        
-            <div class="media col-md-6 my-4">
-    
-        
-        <div style="background-image: url(/assets/staff-images/huy-tran.jpg)" class="mr-3 rounded-circle staff-image"></div>
-    
-    <div class="media-body">
-        <h5 class="my-0">
-            
-            Huy Tran
-            
-                <span class="text-muted">
-                    (he/him)
-                </span>
-            
-        </h5>
-        <p class="my-1">
-        
-           <span class="text-muted">Reader</span>
-           &bull;
-        
-        huytran@
-        
-        </p>
-
-        
-        
-            <span class="staff-bio">
-                <p>i actually prefer inefficient algorithms and tractable problems</p>
-
-            </small>
-        
-    </div>
-</div>
-
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-            <div class="media col-md-6 my-4">
-    
-        
-        <div style="background-image: url(/assets/staff-images/jonah-tharakan.jpg)" class="mr-3 rounded-circle staff-image"></div>
-    
-    <div class="media-body">
-        <h5 class="my-0">
-            
-            Jonah Tharakan
-            
-                <span class="text-muted">
-                    (he/him)
-                </span>
-            
-        </h5>
-        <p class="my-1">
-        
-           <span class="text-muted">Reader</span>
-           &bull;
-        
-        jonahmt@
-        
-            &bull;
-            <a href="www.linkedin.com/in/jonah-tharakan-8488831a0">website</a>
-        
-        </p>
-
-        
-        
-            <span class="staff-bio">
-                <p>Hey y’all, I’m Jonah, a second year studying EECS. I’m very excited to be on course staff this semester! In my free time I like going to the gym, playing tennis, hanging out with friends, and reading. Please feel free to reach out for any reason! I look forward to meeting you guys.</p>
-
-            </small>
-        
-    </div>
-</div>
-
-        
-    
-
-    
-        
-    
-
-    
-        
-            <div class="media col-md-6 my-4">
-    
-        
-        <div style="background-image: url(/assets/staff-images/josh-lorincz.jpg)" class="mr-3 rounded-circle staff-image"></div>
-    
-    <div class="media-body">
-        <h5 class="my-0">
-            
-            Josh Lorincz
-            
-                <span class="text-muted">
-                    (he/him)
-                </span>
-            
-        </h5>
-        <p class="my-1">
-        
-           <span class="text-muted">Reader</span>
-           &bull;
-        
-        joshlor@
-        
-        </p>
-
-        
-        
-            <span class="staff-bio">
-                <p>Hey y’all! My name is Josh. I am a third-year from Vancouver and study computer science and applied math. I enjoy hiking, bouldering, and skiing… Psych, I like sitting inside and writing code. Feel free to reach out, and best of luck in 170!</p>
-
-            </small>
-        
-    </div>
-</div>
-
-        
-    
-
-    
-        
-    
-
-    
-        
-            <div class="media col-md-6 my-4">
-    
-        
-        <div style="background-image: url(/assets/staff-images/kaushik-singh.jpg)" class="mr-3 rounded-circle staff-image"></div>
-    
-    <div class="media-body">
-        <h5 class="my-0">
-            
-            Kaushik Kunal Singh
-            
-                <span class="text-muted">
-                    (He/Him)
-                </span>
-            
-        </h5>
-        <p class="my-1">
-        
-           <span class="text-muted">Reader</span>
-           &bull;
-        
-        kaushik.kunal@
-        
-        </p>
-
-        
-        
-            <span class="staff-bio">
-                <p>I like trains</p>
-
-            </small>
-        
-    </div>
-</div>
-
-        
-    
-
-    
-        
-            <div class="media col-md-6 my-4">
-    
-        
-        <div style="background-image: url(/assets/staff-images/kehan-li.jpg)" class="mr-3 rounded-circle staff-image"></div>
-    
-    <div class="media-body">
-        <h5 class="my-0">
-            
-            Kehan Li
-            
-                <span class="text-muted">
-                    (she/her)
-                </span>
-            
-        </h5>
-        <p class="my-1">
-        
-           <span class="text-muted">Reader</span>
-           &bull;
-        
-        kehanli@
-        
-            &bull;
-            <a href="https://www.linkedin.com/in/kehan-li/">website</a>
-        
-        </p>
-
-        
-        
-            <span class="staff-bio">
-                <p>Hi! I’m Kehan and I’m a junior majoring in CS. I enjoy dancing and watching reality shows, but feel free to ask me about anything :) Really excited to be meeting you all this semester!</p>
-
-            </small>
-        
-    </div>
-</div>
-
-        
-    
-
-    
-        
-    
-
-    
-        
-            <div class="media col-md-6 my-4">
-    
-        
-        <div style="background-image: url(/assets/staff-images/matthew-lee.jpg)" class="mr-3 rounded-circle staff-image"></div>
-    
-    <div class="media-body">
-        <h5 class="my-0">
-            
-            Matthew Lee
-            
-                <span class="text-muted">
-                    (he/him/his)
-                </span>
-            
-        </h5>
-        <p class="my-1">
-        
-           <span class="text-muted">Reader</span>
-           &bull;
-        
-        matthewlee3@
-        
-            &bull;
-            <a href="https://matthewlee.xyz">website</a>
-        
-        </p>
-
-        
-        
-            <span class="staff-bio">
-                <p>hey i’m matthew and i like great vibes. please hit me up if you have a life changing restaurant that can top niku steakhouse in sf.</p>
-
-            </small>
-        
-    </div>
-</div>
-
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-            <div class="media col-md-6 my-4">
-    
-        <div style="background-image: url(/assets/pnpenguin.png)" class="mr-3 rounded-circle staff-image"></div>
-    
-    <div class="media-body">
-        <h5 class="my-0">
-            
-            Sanjay Gollapudi
-            
-        </h5>
-        <p class="my-1">
-        
-           <span class="text-muted">Reader</span>
-           &bull;
-        
-        sanjaygollapudi@
-        
-        </p>
-
-        
-        
-    </div>
-</div>
-
-        
-    
-
-    
-        
-            <div class="media col-md-6 my-4">
-    
-        
-        <div style="background-image: url(/assets/staff-images/sean-yang.jpg)" class="mr-3 rounded-circle staff-image"></div>
-    
-    <div class="media-body">
-        <h5 class="my-0">
-            
-            Sean Yang
-            
-        </h5>
-        <p class="my-1">
-        
-           <span class="text-muted">Reader</span>
-           &bull;
-        
-        szyang@
-        
-            &bull;
-            <a href="https://palisadestahoe.com">website</a>
-        
-        </p>
-
-        
-        
-            <span class="staff-bio">
-                <p>Hey all! I’m a 2nd year CS major and this is my 2nd semester on course staff. Since it’s spring, you may find me in the following places on weekends: Tahoe, somewhere on highway 80 driving to or from Tahoe, or in my apartment checking the weather/road conditions for Tahoe. I hope you all have a great semester and set aside some time to go skiing!</p>
-
-            </small>
-        
-    </div>
-</div>
-
-        
-    
-
-    
-        
-    
-
-    
-        
-            <div class="media col-md-6 my-4">
-    
-        
-        <div style="background-image: url(/assets/staff-images/sowmya-thanvantri.png)" class="mr-3 rounded-circle staff-image"></div>
-    
-    <div class="media-body">
-        <h5 class="my-0">
-            
-            Sowmya Thanvantri
-            
-                <span class="text-muted">
-                    (she/her)
-                </span>
-            
-        </h5>
-        <p class="my-1">
-        
-           <span class="text-muted">Reader</span>
-           &bull;
-        
-        sowmya.thanvantri@
-        
-        </p>
-
-        
-        
-            <span class="staff-bio">
-                <p>Hi! I’m Sowmya and I’m a third year studying CS and physics. In my free time, I enjoy photography, listening to r&amp;b/reggaeton, and eating acai bowls. Feel free to reach out anytime! :)</p>
-
-            </small>
-        
-    </div>
-</div>
-
-        
-    
-
-    
-        
-            <div class="media col-md-6 my-4">
-    
-        
-        <div style="background-image: url(/assets/staff-images/steven-huang.jpg)" class="mr-3 rounded-circle staff-image"></div>
-    
-    <div class="media-body">
-        <h5 class="my-0">
-            
-            Steven Huang
-            
-                <span class="text-muted">
-                    (he/him/his)
-                </span>
-            
-        </h5>
-        <p class="my-1">
-        
-           <span class="text-muted">Reader</span>
-           &bull;
-        
-        huangsteven@
-        
-            &bull;
-            <a href="https://stevenhuang010.github.io/">website</a>
-        
-        </p>
-
-        
-        
-            <span class="staff-bio">
-                <p>Hi, I’m Steven and I’m really excited to be a reader this semester!</p>
-
-            </small>
-        
-    </div>
-</div>
-
-        
-    
-
-    
-        
-    
-
-    
-        
-            <div class="media col-md-6 my-4">
-    
-        
-        <div style="background-image: url(/assets/staff-images/vaibhav-agrawal.jpg)" class="mr-3 rounded-circle staff-image"></div>
-    
-    <div class="media-body">
-        <h5 class="my-0">
-            
-            Vaibhav Agrawal
-            
-                <span class="text-muted">
-                    (he/him)
-                </span>
-            
-        </h5>
-        <p class="my-1">
-        
-           <span class="text-muted">Reader</span>
-           &bull;
-        
-        vaibhav2001@
-        
-        </p>
-
-        
-        
-            <span class="staff-bio">
-                <p>I am (allegedly) a cinephile, which has caused me to be addicted to popcorn. Since taking 170 last semester I have developed a keen interest in theory. So, I am happy to help others find that passion and lucky to be on course staff this semester. Feel free to hmu if you wanna talk about anything (especially if you wanna have a long debate about the best fries in Berkeley).</p>
-
-            </small>
-        
-    </div>
-</div>
-
-        
-    
-
-    
-        
-    
-
-    
-        
-    
-
-    
-        
-            <div class="media col-md-6 my-4">
-    
-        
-        <div style="background-image: url(/assets/staff-images/xavier-plourde.jpg)" class="mr-3 rounded-circle staff-image"></div>
-    
-    <div class="media-body">
-        <h5 class="my-0">
-            
-            Xavier Plourde
-            
-                <span class="text-muted">
-                    (he/him/his)
-                </span>
-            
-        </h5>
-        <p class="my-1">
-        
-           <span class="text-muted">Reader</span>
-           &bull;
-        
-        plourde27@
-        
-        </p>
-
-        
-        
-            <span class="staff-bio">
-                <p>Hi! I’m a second-year CS major from Upstate New York. I really like working on large coding projects, and most recently I’ve been working on making a 3D skiing game. In my free time, I enjoy competitive programming, cycling, rock climbing, skiing, and playing the piano and saxophone.</p>
-
-            </small>
-        
-    </div>
-</div>
-
-        
-    
-
-    
-        
-            <div class="media col-md-6 my-4">
-    
-        
-        <div style="background-image: url(/assets/staff-images/zeeshan-patel.jpg)" class="mr-3 rounded-circle staff-image"></div>
-    
-    <div class="media-body">
-        <h5 class="my-0">
-            
-            Zeeshan Patel
-            
-        </h5>
-        <p class="my-1">
-        
-           <span class="text-muted">Reader</span>
-           &bull;
-        
-        zeeshanp@
-        
-            &bull;
-            <a href="https://zeeshanp.me">website</a>
-        
-        </p>
-
-        
-        
-            <span class="staff-bio">
-                <p>Hey! I’m a sophomore CS major from the Bay Area. In my free time, I love playing super smash bros, going on long drives, and writing algorithms to help computers see 👀! Feel free to reach out if you’d like to talk about algorithms, computer vision, or anything about life :)</p>
-
-            </small>
-        
-    </div>
-</div>
-
-        
-    
-
-    
-        
-            <div class="media col-md-6 my-4">
-    
-        
-        <div style="background-image: url(/assets/staff-images/zenan-han.jpg)" class="mr-3 rounded-circle staff-image"></div>
-    
-    <div class="media-body">
-        <h5 class="my-0">
-            
-            Zenan Han
-            
-                <span class="text-muted">
-                    (he/him)
-                </span>
-            
-        </h5>
-        <p class="my-1">
-        
-           <span class="text-muted">Reader</span>
-           &bull;
-        
-        zenan.han@
-        
-        </p>
-
-        
-        
-            <span class="staff-bio">
-                <p>Hey! I’m a second-year majoring in CS. I enjoy going to concerts, watching/making films, and going to different places.</p>
-
-            </small>
-        
-    </div>
-</div>
-
-        
-    
-
-    
         
     
 
@@ -3711,87 +669,81 @@ https://oh.cs170.org
 
 
 
-          </div>
     </div>
+  </div>
 
-    <footer class="page-footer">
-        <ul class="nav justify-content-center">
-            <li class="nav-item">
-                <a class="nav-link text-secondary" href="/">
-                  CS 170
-                </a>
-              </li>
-            
-            <li class="nav-item">
-              <a class="nav-link " 
-                href="
+  <footer class="page-footer">
+    <ul class="nav justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link text-secondary" href="/">
+          CS 170
+        </a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link " href="
 /schedule/
 ">
-                Schedule
-              </a>
-            </li>
-            
-            <li class="nav-item">
-              <a class="nav-link " 
-                href="
+          Schedule
+        </a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link " href="
 /staff/
 ">
-                Staff
-              </a>
-            </li>
-            
-            <li class="nav-item">
-              <a class="nav-link " 
-                href="
+          Staff
+        </a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link " href="
 /resources/
 ">
-                Resources
-              </a>
-            </li>
-            
-            <li class="nav-item">
-              <a class="nav-link " 
-                href="
+          Resources
+        </a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link " href="
 /syllabus/
 ">
-                Syllabus
-              </a>
-            </li>
-            
-            <li class="nav-item">
-              <a class="nav-link  text-dark " 
-                href="
+          Syllabus
+        </a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link  text-dark " href="
 https://edstem.org/us/courses/35698
 ">
-                Ed
-              </a>
-            </li>
-            
-            <li class="nav-item">
-              <a class="nav-link  text-dark " 
-                href="
+          Ed
+        </a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link  text-dark " href="
 https://bcourses.berkeley.edu/courses/1523347
 ">
-                bCourses
-              </a>
-            </li>
-            
-            <li class="nav-item">
-              <a class="nav-link  text-dark " 
-                href="
+          bCourses
+        </a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link  text-dark " href="
 https://oh.cs170.org
 ">
-                Queue
-              </a>
-            </li>
-            
+          Queue
+        </a>
+      </li>
+      
 
-            <li class="nav-item">
-              <a class="nav-link text-secondary" href="#">
-                Back to top
-              </a>
-            </li>
-        </ul>
-    </footer>
-  </body>
+      <li class="nav-item">
+        <a class="nav-link text-secondary" href="#">
+          Back to top
+        </a>
+      </li>
+    </ul>
+  </footer>
+</body>
+
 </html>
